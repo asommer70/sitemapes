@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?php foreach(get_pages() as $page) { ?>
+  <?php $mod_date = new DateTime($page->post_modified); ?>
+  <url>
+    <loc><?php echo get_permalink($page); ?></loc>
+    <lastmod><?php echo $mod_date->format(DATE_W3C); ?></lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <?php } ?>
+</urlset>
