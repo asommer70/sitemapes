@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Sitemapes
-Plugin URI: https://sitemaps.thehoick.com/
+Plugin URI: https://github.com/asommer70/sitemapes
 Version: 0.0.1
 Author: Adam Sommer
 Description: Simple sitemap.xml creator.
