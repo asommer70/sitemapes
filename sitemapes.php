@@ -12,7 +12,7 @@ Description: Simple sitemap.xml creator.
 // Add a rewrite rule to intercept /sitemap.xml.
 //
 function sitemapes_rewrite_rule() {
-  add_rewrite_rule( 'sitemap.xml$', 'index.php', 'top' );
+  add_rewrite_rule( 'sitemap.xml$', 'index.php?sitemap=true', 'top' );
 }
 add_action( 'init', 'sitemapes_rewrite_rule');
 
