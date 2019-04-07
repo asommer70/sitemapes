@@ -32,7 +32,7 @@ add_filter( 'query_vars', 'sitemapes_query_vars' );
 //
 function sitemapes_parse_request(&$wp) {
   if (array_key_exists( 'sitemap', $wp->query_vars )) {
-    header('Content-type: text/xml');
+    header('Content-type: application/xml');
     include 'sitemap-template.xml';
     exit();
   }
